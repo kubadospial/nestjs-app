@@ -1,7 +1,7 @@
-import { FeeEntity } from './fee.entity';
+import { CustomerEntity } from './customer.entity';
 
-describe('FeeEntity', () => {
+describe('FeesEntity', () => {
   it('should be defined', () => {
-    expect(new FeeEntity()).toBeDefined();
+    expect(new CustomerEntity()).toBeDefined();
   });
 });

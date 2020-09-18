@@ -1,9 +1,10 @@
 import { Module, Logger } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { CustomerModule } from './customer/customer.module';
-import { CustomerEntity } from './customer/customer.entity';
 import { Connection } from 'typeorm';
 import { FeeModule } from './fee/fee.module';
+import { FeeEntity } from './fee/entity/fee.entity';
+import { CustomerEntity } from './customer/customer.entity';
 
 @Module({
   imports: [
@@ -13,8 +14,8 @@ import { FeeModule } from './fee/fee.module';
       port: 3306,
       username: 'root',
       password: 'admin',
-      database: 'customer_list',
-      entities: [CustomerEntity],
+      database: 'fee',
+      entities: [FeeEntity, CustomerEntity],
       synchronize: true,
     }),
     CustomerModule,
