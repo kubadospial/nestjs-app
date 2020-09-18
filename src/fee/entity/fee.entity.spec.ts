@@ -1,6 +1,6 @@
 import { FeeEntity } from './fee.entity';
 
-describe('FeeEntity', () => {
+describe('CustomerEntity', () => {
   it('should be defined', () => {
     expect(new FeeEntity()).toBeDefined();
   });

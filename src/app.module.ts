@@ -12,7 +12,7 @@ import { FeeModule } from './fee/fee.module';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: '***',
+      password: 'admin',
       database: 'customer_list',
       entities: [CustomerEntity],
       synchronize: true,
